@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!--- si se ponen los dos puntos es un proceso privado sino seira publico y se podrian añadir otros servicio -->
         <service
             android:name=".MainService"
             android:enabled="true"
