@@ -93,4 +93,7 @@ public class Noticia {
     }
 
 
+    public void setFechaPublicacion(String string) {
+
+    }
 }
