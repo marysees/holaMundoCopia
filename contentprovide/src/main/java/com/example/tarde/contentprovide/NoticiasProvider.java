@@ -70,7 +70,7 @@ public class NoticiasProvider extends ContentProvider {
                 //para obtener el ultimo elemento del la uri que es el idid
                 String id = uri.getLastPathSegment();
                 String[] whereArgs={id};
-                String whereClause=CAMPO_ID+"= '?'";
+                String whereClause=CAMPO_ID+"= ?";
                 return db.delete(TABLA,  whereClause, whereArgs);
 
             case CODE_NOTICIAS:
@@ -116,7 +116,7 @@ public class NoticiasProvider extends ContentProvider {
             case CODE_NOTICIA:
                 //para obtener el ultimo elemento del la uri que es el idid
                 String[] whereArgs={uri.getLastPathSegment()};
-                String whereClause=CAMPO_ID+"= '?'";
+                String whereClause=CAMPO_ID+"= ?";
                 return db.query(false, TABLA, projection, whereClause,  whereArgs, null, null, sortOrder, null);
 
             case CODE_NOTICIAS:
@@ -140,7 +140,7 @@ public class NoticiasProvider extends ContentProvider {
                 //para obtener el ultimo elemento del la uri que es el idid
                 String id = uri.getLastPathSegment();
                 String[] whereArgs={id};
-                String whereClause=CAMPO_ID+"= '?'";
+                String whereClause=CAMPO_ID+"= ?";
                 return db.update(TABLA, values,  whereClause, whereArgs);
 
             case CODE_NOTICIAS:
