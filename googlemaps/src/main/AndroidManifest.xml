@@ -30,7 +30,7 @@
                 android:value="AIzaSyB61t_FV11W9beHevSR8LCilgNjzPhw57M"/>
 
             <meta-data
-                android:name="com.google.gms.version"
+                android:name="com.google.gms.version"/>
                 <!--android:value="@integer/google_play_services_version"/>-->
 
             <intent-filter>

@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
 
         Terremoto terremoto= new Terremoto("Terremoto en santiago",1.3f, 42.862130f, -8.554f );
 
-        TerremotoMapFragment mapFragment= getFragmentManager().findFragmentById(R.id.mapFragment);
+        TerremotoMapFragment mapFragment= (TerremotoMapFragment) getFragmentManager().findFragmentById(R.id.mapFragment);
 
         if (mapFragment== null){
             mapFragment.dibujarTerremoto(terremoto);
